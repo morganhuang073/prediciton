@@ -1,4 +1,170 @@
 {
   "top_k": 3,
-  "y_definition": "1 if Bad else 0"
+  "y_definition": "1 if Bad else 0",
+  "target_col": "RiskPerformance",
+  "feature_cols_raw": [
+    "ExternalRiskEstimate",
+    "MSinceOldestTradeOpen",
+    "MSinceMostRecentTradeOpen",
+    "AverageMInFile",
+    "NumSatisfactoryTrades",
+    "NumTrades60Ever2DerogPubRec",
+    "NumTrades90Ever2DerogPubRec",
+    "PercentTradesNeverDelq",
+    "MSinceMostRecentDelq",
+    "MaxDelq2PublicRecLast12M",
+    "MaxDelqEver",
+    "NumTotalTrades",
+    "NumTradesOpeninLast12M",
+    "PercentInstallTrades",
+    "MSinceMostRecentInqexcl7days",
+    "NumInqLast6M",
+    "NumInqLast6Mexcl7days",
+    "NetFractionRevolvingBurden",
+    "NetFractionInstallBurden",
+    "NumRevolvingTradesWBalance",
+    "NumInstallTradesWBalance",
+    "NumBank2NatlTradesWHighUtilization",
+    "PercentTradesWBalance"
+  ],
+  "feature_schema": {
+    "ExternalRiskEstimate": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "MSinceOldestTradeOpen": {
+      "type": "int",
+      "min": 0,
+      "max": 600,
+      "default": 24
+    },
+    "MSinceMostRecentTradeOpen": {
+      "type": "int",
+      "min": 0,
+      "max": 600,
+      "default": 24
+    },
+    "AverageMInFile": {
+      "type": "int",
+      "min": 0,
+      "max": 600,
+      "default": 24
+    },
+    "NumSatisfactoryTrades": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "NumTrades60Ever2DerogPubRec": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "NumTrades90Ever2DerogPubRec": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "PercentTradesNeverDelq": {
+      "type": "int",
+      "min": 0,
+      "max": 100,
+      "default": 50
+    },
+    "MSinceMostRecentDelq": {
+      "type": "int",
+      "min": 0,
+      "max": 600,
+      "default": 24
+    },
+    "MaxDelq2PublicRecLast12M": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "MaxDelqEver": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "NumTotalTrades": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "NumTradesOpeninLast12M": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "PercentInstallTrades": {
+      "type": "int",
+      "min": 0,
+      "max": 100,
+      "default": 50
+    },
+    "MSinceMostRecentInqexcl7days": {
+      "type": "int",
+      "min": 0,
+      "max": 600,
+      "default": 24
+    },
+    "NumInqLast6M": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "NumInqLast6Mexcl7days": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "NetFractionRevolvingBurden": {
+      "type": "int",
+      "min": 0,
+      "max": 100,
+      "default": 50
+    },
+    "NetFractionInstallBurden": {
+      "type": "int",
+      "min": 0,
+      "max": 100,
+      "default": 50
+    },
+    "NumRevolvingTradesWBalance": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "NumInstallTradesWBalance": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "NumBank2NatlTradesWHighUtilization": {
+      "type": "int",
+      "min": 0,
+      "max": 200,
+      "default": 0
+    },
+    "PercentTradesWBalance": {
+      "type": "int",
+      "min": 0,
+      "max": 100,
+      "default": 50
+    }
+  }
 }
